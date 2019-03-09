@@ -52,8 +52,9 @@ app.use("/", indexRoutes);
 app.use("/campground/:id/comments/", commentRoutes);
 app.use("/campground", campgoundRoutes);
 
-mongoose.connect("mongodb://localhost:27017/YelpcampV12", { useNewUrlParser: true });
-
+// mongoose.connect("mongodb://localhost:27017/YelpcampV12", { useNewUrlParser: true });
+// mongodb+srv://chris:<password>@cluster0-uc2n0.mongodb.net/test?retryWrites=true
+mongoose.connect("mongodb+srv://chris:chris618@cluster0-uc2n0.mongodb.net/yelp_camp?retryWrites=true");
 
 // Campground.create(
 //     {
